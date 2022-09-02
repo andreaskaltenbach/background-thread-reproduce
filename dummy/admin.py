@@ -10,8 +10,12 @@ def run():
     millis = 0
     while millis <= 60000:
         print(f"{millis} milliseconds passed")
+        dummy = Dummy.objects.all()
+        print(len(dummy))
         time.sleep(0.2)
         millis += 200
+        dummy = Dummy.objects.all()
+        print(len(dummy))
     print("One minute passed. Done")
 
 
