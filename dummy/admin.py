@@ -8,13 +8,11 @@ import time
 def run():
     print("Run")
     millis = 0
-    while millis < 60000:
+    while millis <= 60000:
         print(f"{millis} milliseconds passed")
         time.sleep(0.2)
         millis += 200
-
-
-
+    print("One minute passed. Done")
 
 
 # Register your models here.
